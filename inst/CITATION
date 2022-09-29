@@ -1,0 +1,15 @@
+citHeader("To cite NetInt in publications use:")
+
+citEntry(
+  entry    = "Article",
+  title    = "An extensive analysis of disease-gene associations using network integration and fast kernel-based gene prioritization methods",
+  author   = "Valentini, Giorgio and Paccanaro, Alberto and Caniza, Horacio and Romero, Alfonso E and Re, Matteo",
+  journal  = "Artificial Intelligence in Medicine",
+  year     = 2014,
+  volume   = 61,
+  number   = 2,
+  pages    = 63--78,
+  url      = "https://doi.org/10.1016/j.artmed.2014.03.003",
+  publisher = "Elsevier",
+  textVersion = "Valentini, Giorgio, et al. An extensive analysis of disease-gene associations using network integration and fast kernel-based gene prioritization methods. Artificial Intelligence in Medicine 61.2 (2014): 63-78."
+)

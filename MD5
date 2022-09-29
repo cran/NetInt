@@ -1,0 +1,17 @@
+859262a17616ab137de4eb4301505051 *DESCRIPTION
+465cfa26afbaf3ec482d4ecefc2160c1 *NAMESPACE
+f8ce43b46c2e6e9cc9f9e233067765b5 *R/netint.R
+a387c89dff3ea07885acec99f6455c87 *README.md
+d3b7da68b287ba591fffeb74d2412852 *build/NetInt.pdf
+474c6b6f8d557bbf1955f0818f87613f *inst/CITATION
+b6f8f19ea809b9d00773786e0d437a02 *inst/doc/NetInt.pdf
+fa09e1b6942669a28450a82e2922c8c1 *man/ATLEASTK.int.Rd
+b36295f0fe9ebb23965eb5c900866c71 *man/MAX.int.Rd
+82be20c641c486800f392adba83e2a82 *man/MIN.int.Rd
+c3d5d8c639963052b5ee48ee68c2a42d *man/MS.UA.int.Rd
+92c3265304d95c8b0896fdaa9dc6f4b1 *man/PUA.int.Rd
+31c7acbe3ef9b97b4171b1efa295170a *man/UA.int.Rd
+7695bd2dcb09d460a96dfb21fced5cab *man/WA.int.Rd
+591aca8d40fd59d909fb56abbc36c5d2 *man/WAP.int.Rd
+87cf98c2a8a48a862e45f4fbae22eb75 *man/align.networks.Rd
+e67f1c8498299e102979361bb59ac822 *man/lalign.networks.Rd
