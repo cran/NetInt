@@ -21,8 +21,7 @@ the integrated matrix : the matrix resulting from UA.
 }
 \description{
 It performs the unweighted average integration between networks:
-\loadmathjax
-\mjsdeqn{\bar{w}_{ij} = \frac{1}{n} \sum_{d = 1}^n w_{ij}^d}
+\deqn{\bar{w}_{ij} = \frac{1}{n} \sum_{d = 1}^n w_{ij}^d}
 }
 \examples{
 # Create three example networks of different size

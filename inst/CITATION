@@ -1,7 +1,6 @@
-citHeader("To cite NetInt in publications use:")
-
-citEntry(
-  entry    = "Article",
+bibentry(
+  bibtype  = "Article",
+  header   = "To cite NetInt in publications use:",
   title    = "An extensive analysis of disease-gene associations using network integration and fast kernel-based gene prioritization methods",
   author   = "Valentini, Giorgio and Paccanaro, Alberto and Caniza, Horacio and Romero, Alfonso E and Re, Matteo",
   journal  = "Artificial Intelligence in Medicine",

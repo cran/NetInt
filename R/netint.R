@@ -11,8 +11,8 @@
 #' Unweighted Average (UA) network integration
 #'
 #' @description It performs the unweighted average integration between networks:
-#' \loadmathjax
-#' \mjsdeqn{\bar{w}_{ij} = \frac{1}{n} \sum_{d = 1}^n w_{ij}^d}
+# \mjsdeqn{\bar{w}_{ij} = \frac{1}{n} \sum_{d = 1}^n w_{ij}^d}
+#' \deqn{\bar{w}_{ij} = \frac{1}{n} \sum_{d = 1}^n w_{ij}^d}
 #'
 #' @param align logical. If TRUE (def.) the matrices are aligned using
 #'      align.networks, otherwise they are directly summed without any
@@ -59,8 +59,8 @@ UA.int <- function(align=TRUE, ...) {
 #' "Memory Saving" Unweighted Average (UA) network integration
 #'
 #' @description It performs the unweighted average integration between networks:
-#' \loadmathjax
-#' \mjsdeqn{\bar{w}_{ij} = \frac{1}{n} \sum_{d = 1}^n w_{ij}^d}
+# \mjsdeqn{\bar{w}_{ij} = \frac{1}{n} \sum_{d = 1}^n w_{ij}^d}
+#' \deqn{\bar{w}_{ij} = \frac{1}{n} \sum_{d = 1}^n w_{ij}^d}
 #' The matrices are read from files and loaded one at time in memory.
 #'
 #' @param nets.files a list with the names of the .rda files storing the
@@ -108,9 +108,10 @@ MS.UA.int <- function(nets.files, example.names=NULL) {
 #'
 #' @description It performs the per-edge unweighted average integration between
 #' networks:
-#' \loadmathjax
-#' \mjsdeqn{\bar{w}_{ij} = \frac{1}{|D(i,j)|} \sum_{d \in D(i,j)} w_{ij}^d}
-#' where: \mjsdeqn{D(i,j) = \lbrace  d | v_i \in V^d \wedge v_j \in V^d \rbrace}
+# \mjsdeqn{\bar{w}_{ij} = \frac{1}{|D(i,j)|} \sum_{d \in D(i,j)} w_{ij}^d}
+#' \deqn{\bar{w}_{ij} = \frac{1}{|D(i,j)|} \sum_{d \in D(i,j)} w_{ij}^d}
+# where: \mjsdeqn{D(i,j) = \lbrace  d | v_i \in V^d \wedge v_j \in V^d \rbrace}
+#' where: \deqn{D(i,j) = \lbrace  d | v_i \in V^d \wedge v_j \in V^d \rbrace}
 #'
 #' @param ... a list of numeric matrices. These must be named matrices
 #'       representing adjacency matrices of the networks. Matrices may have
@@ -169,8 +170,8 @@ PUA.int <- function(...) {
 #' Maximum (MAX) network integration
 #'
 #' @description It performs the Max integration between networks:
-#' \loadmathjax
-#' \mjsdeqn{\bar{w}_{ij} = \max_{d} w_{ij}^d}
+# \mjsdeqn{\bar{w}_{ij} = \max_{d} w_{ij}^d}
+#' \deqn{\bar{w}_{ij} = \max_{d} w_{ij}^d}
 #'
 #' @param ... a list of numeric matrices. These must be named matrices
 #'       representing adjacency matrices of the networks. Matrices may have
@@ -211,8 +212,8 @@ MAX.int <- function(...) {
 #' Minimum (MIN) network integration
 #'
 #' @description It performs the Min integration between networks:
-#' \loadmathjax
-#' \mjsdeqn{\bar{w}_{ij} = \min_{d} w_{ij}^d}
+# \mjsdeqn{\bar{w}_{ij} = \min_{d} w_{ij}^d}
+#' \deqn{\bar{w}_{ij} = \min_{d} w_{ij}^d}
 #' Note that this function consider the minimum between existing edges, that is
 #' if an edge (i,j) is not present in a network, since one of the nodes
 #' i or j is not present in the network, then the edge is not considered in the
@@ -335,11 +336,12 @@ ATLEASTK.int <- function(k=1, ...) {
 #' Weighted Average Per-class (WAP) network integration
 #'
 #' @description It performs the WAP integration between networks:
-#' \loadmathjax
-#' \mjsdeqn{\bar{w}_{ij}(k) = \sum_{d = 1}^n \alpha^d(k) w_{ij}^d}
+# \mjsdeqn{\bar{w}_{ij}(k) = \sum_{d = 1}^n \alpha^d(k) w_{ij}^d}
+#' \deqn{\bar{w}_{ij}(k) = \sum_{d = 1}^n \alpha^d(k) w_{ij}^d}
 #' where
-#' \mjsdeqn{\alpha^d(k) = \frac{1}{\sum_{j=1}^n M^j(k)} M^d(k)}
-#' and \mjseqn{M^d(k)} is a suitable accuracy metrics for class k on network d.
+# \mjsdeqn{\alpha^d(k) = \frac{1}{\sum_{j=1}^n M^j(k)} M^d(k)}
+#' \deqn{\alpha^d(k) = \frac{1}{\sum_{j=1}^n M^j(k)} M^d(k)}
+#' and \eqn{M^d(k)} is a suitable accuracy metrics for class k on network d.
 #' The metrics could be, e.g. the AUC or the precision at a given recall.
 #' Note that this function puts more weight (alpha parameter) for networks with
 #' associated larger M.
@@ -356,8 +358,8 @@ ATLEASTK.int <- function(k=1, ...) {
 #'
 #' @return A list with two elements:
 #' \itemize{
-#' \item WAP : the matrix resulting from WAP
-#' \item alpha : a numeric vector with the weight coefficients of the networks
+#' \item{WAP : the matrix resulting from WAP}
+#' \item{alpha : a numeric vector with the weight coefficients of the networks}
 #' }
 #' @export
 #'
@@ -426,8 +428,8 @@ WAP.int <- function(m, align=FALSE, logint=FALSE, ...) {
 #'
 #' @return A list with two elements:
 #' \itemize{
-#' \item WA : the matrix resulting from WA
-#' \item alpha : a numeric vector with the weight coefficients of the networks
+#' \item{WA : the matrix resulting from WA}
+#' \item{alpha : a numeric vector with the weight coefficients of the networks}
 #' }
 #' @export
 #'

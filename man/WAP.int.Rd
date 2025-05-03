@@ -23,17 +23,16 @@ but corresponding elements in different matrices must have the same name.}
 \value{
 A list with two elements:
 \itemize{
-\item WAP : the matrix resulting from WAP
-\item alpha : a numeric vector with the weight coefficients of the networks
+\item{WAP : the matrix resulting from WAP}
+\item{alpha : a numeric vector with the weight coefficients of the networks}
 }
 }
 \description{
 It performs the WAP integration between networks:
-\loadmathjax
-\mjsdeqn{\bar{w}_{ij}(k) = \sum_{d = 1}^n \alpha^d(k) w_{ij}^d}
+\deqn{\bar{w}_{ij}(k) = \sum_{d = 1}^n \alpha^d(k) w_{ij}^d}
 where
-\mjsdeqn{\alpha^d(k) = \frac{1}{\sum_{j=1}^n M^j(k)} M^d(k)}
-and \mjseqn{M^d(k)} is a suitable accuracy metrics for class k on network d.
+\deqn{\alpha^d(k) = \frac{1}{\sum_{j=1}^n M^j(k)} M^d(k)}
+and \eqn{M^d(k)} is a suitable accuracy metrics for class k on network d.
 The metrics could be, e.g. the AUC or the precision at a given recall.
 Note that this function puts more weight (alpha parameter) for networks with
 associated larger M.

@@ -18,9 +18,8 @@ the integrated matrix : the matrix resulting from PUA.
 \description{
 It performs the per-edge unweighted average integration between
 networks:
-\loadmathjax
-\mjsdeqn{\bar{w}_{ij} = \frac{1}{|D(i,j)|} \sum_{d \in D(i,j)} w_{ij}^d}
-where: \mjsdeqn{D(i,j) = \lbrace  d | v_i \in V^d \wedge v_j \in V^d \rbrace}
+\deqn{\bar{w}_{ij} = \frac{1}{|D(i,j)|} \sum_{d \in D(i,j)} w_{ij}^d}
+where: \deqn{D(i,j) = \lbrace  d | v_i \in V^d \wedge v_j \in V^d \rbrace}
 }
 \examples{
 # Create three example networks of different size

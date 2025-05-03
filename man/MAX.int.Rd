@@ -17,8 +17,7 @@ the integrated matrix : the matrix resulting from MAX.
 }
 \description{
 It performs the Max integration between networks:
-\loadmathjax
-\mjsdeqn{\bar{w}_{ij} = \max_{d} w_{ij}^d}
+\deqn{\bar{w}_{ij} = \max_{d} w_{ij}^d}
 }
 \examples{
 # Create three example networks of different size

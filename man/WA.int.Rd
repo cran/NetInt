@@ -23,8 +23,8 @@ but corresponding elements in different matrices must have the same name.}
 \value{
 A list with two elements:
 \itemize{
-\item WA : the matrix resulting from WA
-\item alpha : a numeric vector with the weight coefficients of the networks
+\item{WA : the matrix resulting from WA}
+\item{alpha : a numeric vector with the weight coefficients of the networks}
 }
 }
 \description{

@@ -19,8 +19,7 @@ the integrated matrix : the matrix resulting from MIN.
 }
 \description{
 It performs the Min integration between networks:
-\loadmathjax
-\mjsdeqn{\bar{w}_{ij} = \min_{d} w_{ij}^d}
+\deqn{\bar{w}_{ij} = \min_{d} w_{ij}^d}
 Note that this function consider the minimum between existing edges, that is
 if an edge (i,j) is not present in a network, since one of the nodes
 i or j is not present in the network, then the edge is not considered in the
