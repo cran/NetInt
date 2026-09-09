@@ -1,11 +1,11 @@
 Package: NetInt
 Type: Package
 Title: Methods for Unweighted and Weighted Network Integration
-Version: 1.0.1
+Version: 1.0.2
 Authors@R: c(
     person("Giorgio", "Valentini", email = "valentini@di.unimi.it", role = "aut"),
-    person("Jessica", "Gliozzo", email = "jessica.gliozzo@unimi.it", role = "cre"))
-Maintainer: Jessica Gliozzo <jessica.gliozzo@unimi.it>
+    person("Jessica", "Gliozzo", email = "jessica.gliozzo@gmail.com", role = "cre"))
+Maintainer: Jessica Gliozzo <jessica.gliozzo@gmail.com>
 Description: Implementation of network integration approaches
     comprising unweighted and weighted integration methods. Unweighted integration
     is performed considering the average, per-edge average, maximum and minimum of
@@ -20,10 +20,10 @@ Description: Implementation of network integration approaches
     function prediction, drug repurposing, clinical outcome prediction).
 License: GPL (>= 2)
 Encoding: UTF-8
-RoxygenNote: 7.2.3
+Config/roxygen2/version: 8.1.0
 NeedsCompilation: no
-Packaged: 2025-05-03 15:43:24 UTC; jessica
+Packaged: 2026-09-09 15:19:11 UTC; jessica
 Author: Giorgio Valentini [aut],
   Jessica Gliozzo [cre]
 Repository: CRAN
-Date/Publication: 2025-05-03 16:30:02 UTC
+Date/Publication: 2026-09-09 16:20:09 UTC
